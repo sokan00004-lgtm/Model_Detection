@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="YOLO26n-seg instance segmentation dashboard (Flutter web + onnxruntime-web)">
+  <title>YOLO26n-seg Dashboard</title>
+
+  <!-- onnxruntime-web: runs the ONNX model in the browser (WASM). -->
+  <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.22.0/dist/ort.min.js"></script>
+  <!-- Tiny bridge that Dart calls through dart:js_interop. -->
+  <script src="yolo_bridge.js"></script>
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
